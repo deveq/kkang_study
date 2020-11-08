@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">part4_11</string>
+    <string-array name="spinner_array">
+        <item>한국어</item>
+        <item>영어</item>
+        <item>일본어</item>
+        <item>중국어</item>
+        <item>프랑스어</item>
+    </string-array>
+    <string-array name="auto_array">
+        <item>공부</item>
+        <item>공자</item>
+        <item>공책</item>
+        <item>공놀이</item>
+    </string-array>
+</resources>
