@@ -9,6 +9,7 @@ import android.app.NotificationManager;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.SystemClock;
 
 public class DialogActivity extends AppCompatActivity {
 
@@ -25,7 +26,7 @@ public class DialogActivity extends AppCompatActivity {
             String channelName = "My Channel One";
             String channelDescription = "My Channel One Description";
 
-            NotificationChannel channel = new NotificationChannel(channelId,channelName,
+            NotificationChannel channel = new NotificationChannel(channelId, channelName,
                     NotificationManager.IMPORTANCE_DEFAULT);
 
             channel.setDescription(channelDescription);
@@ -34,9 +35,9 @@ public class DialogActivity extends AppCompatActivity {
             channel.enableLights(true);
             channel.setLightColor(Color.RED);
             channel.enableVibration(true);
-            channel.setVibrationPattern(new long[]{100,200,300});
+            channel.setVibrationPattern(new long[]{100, 200, 300});
 
-            manager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+            manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
             manager.createNotificationChannel(channel);
 
             //channel이 등록된 builder
@@ -60,4 +61,5 @@ public class DialogActivity extends AppCompatActivity {
         manager.cancel(222);
 
     }
+
 }

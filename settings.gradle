@@ -1,3 +1,6 @@
+include ':part9_25_2'
+include ':part9_25'
+include ':part8_22'
 include ':part7_19'
 include ':part6_18'
 include ':part6_17'
